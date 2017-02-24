@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Newscorp</string>
+=    <string name="photo_details">Photo Details</string>
+    <string name="network_error">Internet Connection Unavailable</string>
+    <string name="server_error">Server Not Responding</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="transition_name_photo">transition:photo</string>
+    <string name="photo_id">Photo ID</string>
+    <string name="album_id">Album ID</string>
+    <string name="url">Url</string>
+    <string name="thumbnail_url">Thumbnail Url</string>
+    <string name="loading">Loading Please Wait...</string>
+</resources>

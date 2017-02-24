@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_black"
+    android:weightSum="5">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/transition_name_photo" />
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:stretchColumns="*">
+
+        <TableRow android:layout_width="0dp"
+            >
+
+            <com.codingexercide.newscorp.utils.FontTextView
+                android:id="@+id/lblAlbumId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/album_id"
+                android:textColor="#FFFFFF"
+                foo:customFont="coolvetica_rg.ttf"
+                android:textSize="23sp" />
+
+            <com.codingexercide.newscorp.utils.FontTextView
+                android:id="@+id/lblAlbumId_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lblAlbumId"
+                android:text="text1"
+                android:layout_gravity="end"
+                android:paddingRight="20dp"
+                foo:customFont="coolvetica_rg.ttf"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_width="0dp"
+            android:paddingTop="5dp">
+
+            <com.codingexercide.newscorp.utils.FontTextView
+                android:id="@+id/lblPhotoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_id"
+                android:textColor="#FFFFFF"
+                foo:customFont="coolvetica_rg.ttf"
+                android:textSize="23sp" />
+
+            <com.codingexercide.newscorp.utils.FontTextView
+                android:id="@+id/lblPhotoId_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lblPhotoId"
+                android:text="text_photo"
+                android:layout_gravity="end"
+                android:paddingRight="20dp"
+                android:textColor="#FFFFFF"
+                foo:customFont="coolvetica_rg.ttf"
+                android:textSize="23sp" />
+
+        </TableRow>
+
+    </TableLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <com.codingexercide.newscorp.utils.FontTextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title : "
+            android:textColor="#FFFFFF"
+            foo:customFont="coolvetica_rg.ttf"
+
+            android:textSize="23sp" />
+
+        <com.codingexercide.newscorp.utils.FontTextView
+            android:id="@+id/lblTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titletext"
+            android:layout_alignParentLeft="true"
+            android:text="test text"
+            android:textColor="#FFFFFF"
+            foo:customFont="coolvetica_rg.ttf"
+
+            android:textSize="23sp" />
+
+    </RelativeLayout>
+</LinearLayout>
